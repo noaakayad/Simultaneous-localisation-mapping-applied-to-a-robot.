@@ -1,0 +1,18 @@
+# Projet Robot et Cartographie
+
+Ce projet implémente un robot autonome capable de capturer des points sur un plan, de se déplacer vers ces points, de longer les murs et de générer une carte basée sur ses déplacements. Les points sont capturés et ajoutés à une liste, puis utilisés pour déterminer les actions du robot, comme le déplacement vers le point le plus proche ou le longement de murs.
+
+## Fonctionnalités
+
+- **Capture de points** : Le robot capture des points à chaque itération et les stocke dans une liste.
+- **Déplacement du robot** : Le robot se déplace automatiquement vers le point le plus proche qu'il a trouvé.
+- **Longement des murs** : Le robot peut longer un mur en suivant une ligne déterminée par les points capturés.
+- **Génération d'une carte** : Le robot génère une carte à partir des points capturés et des déplacements effectués, et la sauvegarde sous forme d'image.
+- **Transformation de listes de points** : Les points capturés sont transformés de types `float` à `int` pour être utilisés dans la création de la carte.
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé les bibliothèques suivantes :
+- **Adafruit_Image** : Pour la gestion et la manipulation des images.
+- **Adafruit_SD** : Pour l'utilisation de la carte SD et la sauvegarde des images.
+- **Assert.h** : Pour la gestion des assertions dans le code.
