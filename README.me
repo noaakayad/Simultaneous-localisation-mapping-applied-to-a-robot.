@@ -1,18 +1,18 @@
-# Projet Robot et Cartographie
+# Robot and Mapping Project
 
-Ce projet implémente un robot autonome capable de capturer des points sur un plan, de se déplacer vers ces points, de longer les murs et de générer une carte basée sur ses déplacements. Les points sont capturés et ajoutés à une liste, puis utilisés pour déterminer les actions du robot, comme le déplacement vers le point le plus proche ou le longement de murs.
+This project implements an autonomous robot capable of capturing points on a map, moving towards these points, following walls, and generating a map based on its movements. The captured points are stored in a list and then used to guide the robot's actions, such as moving towards the closest point or following walls.
 
-## Fonctionnalités
+## Features
 
-- **Capture de points** : Le robot capture des points à chaque itération et les stocke dans une liste.
-- **Déplacement du robot** : Le robot se déplace automatiquement vers le point le plus proche qu'il a trouvé.
-- **Longement des murs** : Le robot peut longer un mur en suivant une ligne déterminée par les points capturés.
-- **Génération d'une carte** : Le robot génère une carte à partir des points capturés et des déplacements effectués, et la sauvegarde sous forme d'image.
-- **Transformation de listes de points** : Les points capturés sont transformés de types `float` à `int` pour être utilisés dans la création de la carte.
+- **Point Capture**: The robot captures points during its movement and stores them in a list.
+- **Robot Movement**: The robot automatically moves towards the closest point it has found.
+- **Wall Following**: The robot can follow a wall by tracing a path determined by the captured points.
+- **Map Generation**: The robot generates a map from the captured points and movements and saves it as an image.
+- **Point List Transformation**: The captured points are converted from `float` to `int` for use in map creation.
 
-## Prérequis
+## Prerequisites
 
-Avant de commencer, assurez-vous d'avoir installé les bibliothèques suivantes :
-- **Adafruit_Image** : Pour la gestion et la manipulation des images.
-- **Adafruit_SD** : Pour l'utilisation de la carte SD et la sauvegarde des images.
-- **Assert.h** : Pour la gestion des assertions dans le code.
+Before getting started, make sure to install the following libraries:
+- **Adafruit_Image**: For handling and manipulating images.
+- **Adafruit_SD**: For working with the SD card and saving images.
+- **Assert.h**: For handling assertions in the code.
